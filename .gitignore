@@ -1,0 +1,5 @@
+data/dataset/*
+*.npy
+__pycache__/*
+.ipynb_checkpoints/*
+outcmaes/
