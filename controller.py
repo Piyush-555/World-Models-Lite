@@ -1,11 +1,9 @@
-import torch.nn as nn
+from torch import nn
 
 class Controller(nn.Module):
-    
-    def __init__(self):
+    def __init__(self, nodes):
         super().__init__()
-        
-        self.fc = nn.Linear(32 + 256, 3)
+        self.fc = nn.Linear(nodes, 3)
         
     def forward(self, x):
         return self.fc(x)
